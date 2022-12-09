@@ -7,9 +7,6 @@
   Author: iPhiTech IT Digital Solutions Corporation
   Author URI: iPhiTech IT Digital Solutions Corporation
 */
-@font-face {
-  font-family: "AirFactoryRounded";
-  src: url("./assets/fonts/AirFactoryRounded.ttf");
-}
 
-/*# sourceMappingURL=style.css.map */
+@import "home";
+@import "variables";
