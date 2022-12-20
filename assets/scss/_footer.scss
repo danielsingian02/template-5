@@ -1,0 +1,56 @@
+.footer-section{
+    display: flex;
+    padding: 5em 10em 5em 10em;
+}
+
+
+.footer-section__col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-icon{
+    height: auto;
+    max-width: 200px;
+}
+
+.info-footer{
+    font-size: 25px;
+}
+
+hr.solid-line {
+    border-top: 0.5px solid #bbb;
+  }
+
+.copy-right{
+    font-family: 'AirFactoryRounded', sans-serif;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer-section{
+        display: flex;
+        padding: 5em;
+    }
+  }
+
+@media only screen and (max-width: 425px) {
+    .footer-section{
+        display: flex;
+        padding: 20px;
+    }
+    .info-footer{
+        font-size: 16px;
+    }
+    .footer-section__col{
+        padding: 20px;
+    }
+    .footer-icon{
+        height: auto;
+        max-width: 150px;
+    }
+  }
+

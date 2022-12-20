@@ -1,19 +1,22 @@
-@use "variables" as var;
+@font-face {
+  font-family: 'AirFactoryRounded';
+  src: url('../fonts/AirFactoryRounded.ttf');
+}
+
+button.btn.btn-light {
+  display: none;
+}
 
 header {
   width: 100%;
   font-family: 'AirFactoryRounded', Serif;
-  margin-bottom: 10px;
-
-  & .site-branding {
-    @media #{var.$media_mobile} {
-      display: none !important;
-    }
-  }
+  padding-bottom: 10px;
+  font-size: 27px;
+  
 
   & .site-icon {
     height: auto;
-    max-width: 200px;
+    max-width: 250px;
   }
 
   & .site-title {
@@ -29,8 +32,8 @@ header {
   }
 
   & nav {
-    border-top: 1px solid var.$light-grey;
-    border-bottom: 1px solid var.$light-grey;
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
     width: 100%;
 
     & ul, li {
@@ -51,8 +54,9 @@ header {
       list-style-type: none;
       border-color: transparent;
 
+
       &.current_page_item > a {
-        border-bottom: 2px solid var.$primary-color;
+        border-bottom: 2px solid green;
       }
 
       & > a {
@@ -62,70 +66,41 @@ header {
       }
     }
   }
+}
 
-  & .menu {
-    @media #{var.$media_mobile} {
-      display: none;
-    }
-  }
-
-
-
-  // Mobile Header
-  & .mobile-header {
-    display: none;
-    margin-left: auto;
-    flex-direction: row;
-
-    & .mobile-site-branding {
-      display: flex;
-      width: fit-content;
-      padding-left: 0.5rem;
-
-      & > * {
-        width: 50%;
-        height: auto;
-      }
-    }
-
-    & .hamburger-btn {
-      padding: 0.8rem 1rem;
-      justify-content: center;
-      border: 2px solid transparent;
-      border-radius: 0.5rem;
-      color: var.$primary-color;
-      font-size: 2rem;
-      display: flex;
-
-      & > * {
-        color: currentColor;
-      }
-
-      &:hover {
-        background-color: white;
-        border-color: var.$primary-color;
-        color: var.$primary-color;
-      }
-    }
-
-    // Canvas
-    & .menu-canvas {
-      & .menu {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-
-        & a {
-          padding: 0.5rem 0;
-        }
-      }
-    }
-
-    @media #{var.$media_mobile} {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+@media only screen and (max-width: 768px) {
+  .site-icon{
+    height: auto;
+    width: 150px;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .site-icon{
+    height: auto;
+    width: 100px;
+  }
+  button.btn.btn-light {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 75px;
+}
+
+  .burger ul#primary-menu {
+    display: block;
+}
+.offcanvas-header {
+  padding-top: 50px;
+}
+
+header .site-branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 0px 20px 0px 20px;
+}
+}
+
+
+
