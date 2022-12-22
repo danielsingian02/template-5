@@ -5,15 +5,75 @@
 .welcome-component {
   display: flex;
   flex-direction: row;
+  gap: 5rem;
+}
+.welcome-component__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: black;
 }
 .welcome-component__content__title {
-  color: #056E31;
-  font-size: 45px;
+  font-family: "AirFactoryRounded", sans-serif;
+  font-size: 50px;
   font-weight: 400;
 }
+@media only screen and (max-width: 767px) {
+  .welcome-component__content__title {
+    font-size: 28px;
+    line-height: 34px;
+    color: #056E31;
+  }
+}
 .welcome-component__content__content {
-  color: black;
-  font-size: 16px;
+  font-size: 25px;
+  margin-top: 58px;
+}
+@media only screen and (max-width: 767px) {
+  .welcome-component__content__content {
+    margin-top: 0;
+    font-size: 16px;
+  }
+}
+.welcome-component__content .welcome-component__grid-image {
+  display: grid;
+  grid-template-columns: repeat(8fr, 8fr);
+  position: relative;
+  margin: 0 auto;
+}
+.welcome-component__content .welcome-component__grid-image > div > img {
+  width: 350px;
+  height: auto;
+}
+.welcome-component__content .welcome-component__grid-image .grid-image__left {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row: 1;
+  z-index: -1;
+}
+.welcome-component__content .welcome-component__grid-image .grid-image__right {
+  grid-column-start: 3;
+  grid-column-end: 8;
+  grid-row: 1;
+  z-index: 1;
+  padding-top: 20%;
+}
+@media only screen and (max-width: 767px) {
+  .welcome-component__content .welcome-component__grid-image .grid-image__right {
+    padding-top: 1rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .welcome-component__content .welcome-component__grid-image {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .welcome-component {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
 }
 
 .home-page-container {
@@ -34,7 +94,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding-top: 1.5rem;
+  padding-top: 4rem;
 }
 .home-page-container .home-page-content .welcome-container {
   display: flex;

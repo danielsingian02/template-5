@@ -57,14 +57,7 @@ get_header();
 
 	            ));
 	            ?>
-	            <?php
-	            get_template_part('template-parts/welcome', 'component', array(
-		            "title" => esc_attr($mainContent['title']),
-		            "content" => esc_attr($mainContent['content']),
-		            "left_image" => esc_url($mainContent['left_image']),
-		            "right_image" => esc_url($mainContent['right_image']),
-	            ));
-	            ?>
+
             </div>
         </div>
 
@@ -77,6 +70,5 @@ get_header();
                 frameborder="0"
                 allowfullscreen></iframe>
     </div>
-
 <?php
 get_footer();
