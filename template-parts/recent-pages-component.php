@@ -1,11 +1,14 @@
 <?php
 
 $pageArgs = array(
+    'sort_column' => 'post_date',
 	'post_type' => 'page',
 	'post_status' => 'publish'
 );
 
 $pages = get_pages($pageArgs);
+
+$pages = array_splice($pages, 0, 6);
 
 ?>
 
