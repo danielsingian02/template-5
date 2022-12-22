@@ -59,6 +59,15 @@ get_header();
 	            ?>
 
             </div>
+
+            <div class="recent-pages-container">
+                <?php
+                get_template_part(
+                    'template-parts/recent-pages',
+                    'component'
+                );
+                ?>
+            </div>
         </div>
 
         <iframe
