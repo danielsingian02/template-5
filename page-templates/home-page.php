@@ -68,16 +68,19 @@ get_header();
                 );
                 ?>
             </div>
-        </div>
 
-        <iframe
-                src="<?php echo $googleMapLink?>"
-                height="500"
-                width="100%"
-                referrerpolicy="no-referrer-when-downgrade"
-                loading="lazy"
-                frameborder="0"
-                allowfullscreen></iframe>
+            <div class="google-map-container">
+                <?php
+                get_template_part(
+                    'template-parts/google-map',
+                    'component',
+                    array(
+                        "link" => $googleMapLink,
+                    )
+                )
+                ?>
+            </div>
+        </div>
     </div>
 <?php
 get_footer();
