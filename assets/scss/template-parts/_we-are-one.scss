@@ -1,0 +1,27 @@
+@use "../variables" as v;
+
+.we-are-one {
+  width: 100%;
+  display: flex;
+  padding: 114px 0;
+  gap: 1rem;
+  flex-direction: column;
+  font-family: 'AirFactoryRounded';
+
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 25px;
+    text-justify: auto;
+  }
+  
+  @media #{v.$media_mobile} {
+    
+  }
+}

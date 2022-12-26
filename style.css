@@ -114,6 +114,25 @@
   }
 }
 
+.we-are-one {
+  width: 100%;
+  display: flex;
+  padding: 114px 0;
+  gap: 1rem;
+  flex-direction: column;
+  font-family: "AirFactoryRounded";
+}
+.we-are-one__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 63px;
+  text-align: center;
+}
+.we-are-one__description {
+  font-weight: 400;
+  font-size: 25px;
+  text-justify: auto;
+}
 .home-page-container {
   width: 100%;
   margin: 0;
