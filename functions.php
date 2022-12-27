@@ -203,12 +203,18 @@ function footer_settings() {
 function footer_text_content( $args ){
 	$option = get_option( $args[0] );
 
-	echo "<input 
-			type='text' 
-			size='50'
-			value='$option'
-			name='$args[0]'
-			placeholder='The Text content in your footer'>";
+//	echo "<input
+//			type='text'
+//			size='50'
+//			value='$option'
+//			name='$args[0]'
+//			placeholder='The Text content in your footer'>";
+
+
+
+	echo wp_editor( $option,  'footer-text-content', array(
+		"textarea_name" => $args[0],
+	));
 }
 
 function footer_copyright( $args ){
