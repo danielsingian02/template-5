@@ -154,6 +154,87 @@ function template_5_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'template_5_scripts' );
 
+function register_footer_settings() {
+	if(function_exists('add_settings_field')){
+
+		add_settings_section(
+			"footer_settings", // id
+			"Footer Settings", // title
+			"footer_settings", // callback
+			"general"
+		);
+
+		add_settings_field(
+			"footer_text_content",
+			"Footer Content",
+			"footer_text_content",
+			"general",
+			"footer_settings",
+			array(
+				"footer_text_content",
+			)
+		);
+
+		add_settings_field(
+			"footer_copyright",
+			"Footer Copyright",
+			"footer_copyright",
+			"general",
+			"footer_settings",
+			array(
+				"footer_copyright",
+			)
+		);
+
+		register_setting( "general", "footer_text_content", "esc_attr" );
+		register_setting( "general", "footer_copyright", "esc_attr" );
+	}
+
+	// Setting Default Values for the settings
+	set_field_setting_default_value("footer_text_content", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum nunc turpis arcu dui cursus habitasse elit tempus nisi.");
+	set_field_setting_default_value("footer_copyright", "© Copyright 2021 HOA Management Name Here");
+}
+add_action('admin_init', 'register_footer_settings');
+
+function footer_settings() {
+	echo "<p>The area to change the content of the footer of your site</p>";
+}
+
+function footer_text_content( $args ){
+	$option = get_option( $args[0] );
+
+	echo "<input 
+			type='text' 
+			size='50'
+			value='$option'
+			name='$args[0]'
+			placeholder='The Text content in your footer'>";
+}
+
+function footer_copyright( $args ){
+	$option = get_option( $args[0] );
+	echo "<input 
+			type='text' 
+			size='50' 
+			value='$option'
+			name='$args[0]'
+			placeholder='The Copyright text in your footer'>";
+}
+
+/**
+ * This function sets default values to the field settings
+ *
+ * @param $option_name
+ * @param $value
+ *
+ * @return void
+ */
+function set_field_setting_default_value( $option_name, $value ){
+	if ( ! get_option( $option_name ) ) {
+		update_option( $option_name, $value );
+	}
+}
+
 /**
  * Implement the Custom Header feature.
  */

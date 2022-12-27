@@ -1,0 +1,78 @@
+@use "variables" as v;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+
+  & .footer-content {
+    border-top: 1px solid v.$light-grey;
+    border-bottom: 1px solid v.$light-grey;
+    display: flex;
+    flex-direction: row;
+    padding: 43px 0;
+
+    & p {
+      font-family: 'AirFactoryRounded';
+      font-weight: 400;
+      font-size: 25px;
+    }
+
+    & > .site-icon {
+      flex-basis: 40%;
+
+      & > img {
+        display: flex;
+        margin: auto;
+        width: 181px;
+        height: 102px;
+      }
+    }
+
+    & > .footer-text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      flex-basis: 60%;
+
+      & > p {
+        width: 90%;
+
+        @media #{v.$media_mobile}{
+          margin: 1rem auto;
+        }
+      }
+    }
+
+    @media #{v.$media_mobile}{
+      flex-direction: column;
+      text-align: center;
+
+      & > * {
+        flex-basis: auto;
+      }
+    }
+  }
+
+  & .copyright {
+    padding: 26px 0;
+    text-align: center;
+
+    & > p {
+      font-family: 'AirFactoryRounded';
+      font-weight: 400;
+      font-size: 25px;
+
+      @media #{v.$media_mobile}{
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}

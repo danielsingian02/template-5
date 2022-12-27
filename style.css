@@ -264,6 +264,76 @@ header .mobile-header .menu-canvas .menu a {
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-content {
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+  display: flex;
+  flex-direction: row;
+  padding: 43px 0;
+}
+footer .footer-content p {
+  font-family: "AirFactoryRounded";
+  font-weight: 400;
+  font-size: 25px;
+}
+footer .footer-content > .site-icon {
+  flex-basis: 40%;
+}
+footer .footer-content > .site-icon > img {
+  display: flex;
+  margin: auto;
+  width: 181px;
+  height: 102px;
+}
+footer .footer-content > .footer-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  flex-basis: 60%;
+}
+footer .footer-content > .footer-text-content > p {
+  width: 90%;
+}
+@media only screen and (max-width: 767px) {
+  footer .footer-content > .footer-text-content > p {
+    margin: 1rem auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer-content > * {
+    flex-basis: auto;
+  }
+}
+footer .copyright {
+  padding: 26px 0;
+  text-align: center;
+}
+footer .copyright > p {
+  font-family: "AirFactoryRounded";
+  font-weight: 400;
+  font-size: 25px;
+}
+@media only screen and (max-width: 767px) {
+  footer .copyright > p {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 /*
   Theme Name: Template 5 Testing
   Text Domain: Template 5

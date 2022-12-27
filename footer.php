@@ -12,19 +12,36 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'template_5' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'template_5' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'template_5' ), 'template_5', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="footer-content">
+            <div class="site-icon">
+	            <?php
+	            if ( $siteIcon = get_site_icon_url() ) : ?>
+                    <img src="<?php echo $siteIcon ?>"
+                         class="site-icon"/>
+	            <?php
+	            else :
+		            ?>
+                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	            <?php
+	            endif;
+	            ?>
+            </div>
+            <div class="footer-text-content">
+                <p class="footer-text">
+	                <?php
+	                echo get_option("footer_text_content") ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum nunc turpis arcu dui cursus habitasse elit tempus nisi.";
+	                ?>
+                </p>
+            </div>
+
+        </div>
+        <div class="copyright">
+	        <p>
+		        <?php
+		        echo get_option("footer_copyright") ?? "© Copyright 2021 HOA Management Name Here";
+		        ?>
+            </p>
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
