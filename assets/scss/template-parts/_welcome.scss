@@ -10,6 +10,7 @@
     flex-direction: column;
     width: 100%;
     color: black;
+    text-align: center;
 
     &__title {
       font-family: "AirFactoryRounded", sans-serif;
@@ -17,8 +18,10 @@
       font-weight: 400;
 
       @media #{v.$media_mobile} {
-        font-size: 28px;
+        margin-top: 2rem;
+        font-size: 30px;
         line-height: 34px;
+        font-weight: 600;
         color: v.$primary-color;
       }
     }
@@ -29,7 +32,7 @@
 
       @media #{v.$media_mobile} {
         margin-top: 0;
-        font-size: 16px;
+        font-size: 18px;
       }
     }
 
@@ -69,6 +72,11 @@
         flex-direction: column;
       }
     }
+  }
+
+  @media #{v.$media_tablet} {
+    display: flex;
+    flex-direction: column;
   }
 
   @media #{v.$media_mobile} {

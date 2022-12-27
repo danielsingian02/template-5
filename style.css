@@ -12,6 +12,7 @@
   flex-direction: column;
   width: 100%;
   color: black;
+  text-align: center;
 }
 .welcome-component__content__title {
   font-family: "AirFactoryRounded", sans-serif;
@@ -20,8 +21,10 @@
 }
 @media only screen and (max-width: 767px) {
   .welcome-component__content__title {
-    font-size: 28px;
+    margin-top: 2rem;
+    font-size: 30px;
     line-height: 34px;
+    font-weight: 600;
     color: #056E31;
   }
 }
@@ -32,7 +35,7 @@
 @media only screen and (max-width: 767px) {
   .welcome-component__content__content {
     margin-top: 0;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .welcome-component__content .welcome-component__grid-image {
@@ -65,6 +68,12 @@
 }
 @media only screen and (max-width: 767px) {
   .welcome-component__content .welcome-component__grid-image {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .welcome-component {
     display: flex;
     flex-direction: column;
   }
@@ -128,11 +137,28 @@
   line-height: 63px;
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+  .we-are-one__title {
+    font-size: 30px;
+  }
+}
 .we-are-one__description {
   font-weight: 400;
   font-size: 25px;
   text-justify: auto;
 }
+@media only screen and (max-width: 767px) {
+  .we-are-one__description {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .we-are-one {
+    padding: 57px 0;
+  }
+}
+
 .home-page-container {
   width: 100%;
   margin: 0;
