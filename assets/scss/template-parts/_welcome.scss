@@ -10,7 +10,6 @@
     flex-direction: column;
     width: 100%;
     color: black;
-    text-align: center;
 
     &__title {
       font-family: "AirFactoryRounded", sans-serif;
@@ -77,6 +76,7 @@
   @media #{v.$media_tablet} {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   @media #{v.$media_mobile} {
