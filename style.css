@@ -224,6 +224,14 @@ header nav ul {
   column-gap: 57px;
   justify-content: center;
 }
+@media only screen and (max-width: 767px) {
+  header nav ul {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 10px;
+    padding-left: 0;
+  }
+}
 header nav li {
   display: flex;
   list-style-type: none;
@@ -272,6 +280,9 @@ header .mobile-header .hamburger-btn:hover {
   background-color: white;
   border-color: #056E31;
   color: #056E31;
+}
+header .mobile-header .menu-canvas {
+  width: 80%;
 }
 header .mobile-header .menu-canvas .menu {
   display: flex;
@@ -373,6 +384,14 @@ body {
   font-family: "AirFactoryRounded", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.banner-image {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

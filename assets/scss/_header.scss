@@ -44,6 +44,13 @@ header {
       flex-wrap: wrap;
       column-gap: 57px;
       justify-content: center;
+
+      @media #{var.$media_mobile} {
+        flex-direction: column;
+        column-gap: 0px;
+        row-gap: 10px;
+        padding-left: 0;
+      }
     }
 
     & li {
@@ -110,6 +117,8 @@ header {
 
     // Canvas
     & .menu-canvas {
+      width: 80%;
+
       & .menu {
         display: flex;
         flex-direction: column;
