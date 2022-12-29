@@ -2,6 +2,7 @@
 $green: #056E31;
 $light-grey: #CDCDCD;
 $grey: #C7C7C7;
+$stone-grey : #525252;
 
 // Color Theme
 $primary-color: $green;
@@ -20,4 +21,8 @@ $media_mobile_xs    : "only screen and (max-width: 375px)";
   src: url("./assets/fonts/AirFactoryRounded.ttf");
 }
 
+// Importing Montserrat
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+// Importing DM Sans
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');

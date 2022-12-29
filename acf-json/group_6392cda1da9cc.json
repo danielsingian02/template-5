@@ -398,12 +398,12 @@
                     "append": ""
                 },
                 {
-                    "key": "field_63abe1b4a2e71",
-                    "label": "Client Testimonial 1",
-                    "name": "client_testimonial_1",
+                    "key": "field_63ad5c0625f1e",
+                    "label": "Client Testimonials",
+                    "name": "client_testimonials",
                     "aria-label": "",
                     "type": "group",
-                    "instructions": "Testimonials from the Clients\r\nIf the fields were left empty, the testimonial will not show.",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -414,12 +414,12 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63abe1d2a2e72",
-                            "label": "Client Testimonial",
-                            "name": "client_testimonial",
+                            "key": "field_63abe1b4a2e71",
+                            "label": "Client Testimonial 1",
+                            "name": "client_testimonial_1",
                             "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "The testimonial from the client.",
+                            "type": "group",
+                            "instructions": "Testimonials from the Clients\r\nIf the fields were left empty, the testimonial will not show.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -427,19 +427,102 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Lorem ipsum dolor sit amet consectetur. Amet turpis lobortis odio sagittis ut habitasse ipsum id eget. Sit sit nisl in sed lectus sed aenean dui posuere. Habitant id id turpis ac integer. Auctor nunc mattis curabitur.",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_63abe1d2a2e72",
+                                    "label": "Client Testimonial",
+                                    "name": "client_testimonial",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "The testimonial from the client.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Lorem ipsum dolor sit amet consectetur. Amet turpis lobortis odio sagittis ut habitasse ipsum id eget. Sit sit nisl in sed lectus sed aenean dui posuere. Habitant id id turpis ac integer. Auctor nunc mattis curabitur.",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_63abe213a2e74",
+                                    "label": "Client Image",
+                                    "name": "client_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "The picture of the client, the image will not show if left empty.\r\nNOTE: Make sure the image is 1:1 aspect ratio (e.g. Same width and height)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_63abe1f4a2e73",
+                                    "label": "Client Name",
+                                    "name": "client_name",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "The name of the Client",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Name Surname",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_63abe252a2e75",
+                                    "label": "Client Description",
+                                    "name": "client_description",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "The description or job title of the Client.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Description",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
                         },
                         {
-                            "key": "field_63abe213a2e74",
-                            "label": "Client Image",
-                            "name": "client_image",
+                            "key": "field_63ad5124fdf22",
+                            "label": "Client Testimonial 2",
+                            "name": "client_testimonial_2",
                             "aria-label": "",
-                            "type": "image",
-                            "instructions": "The picture of the client, the image will not show if left emtpy",
+                            "type": "group",
+                            "instructions": "Testimonials from the Clients\r\nIf the fields were left empty, the testimonial will not show.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -447,24 +530,102 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
-                            "library": "",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "preview_size": "medium"
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_63ad5124fdf23",
+                                    "label": "Client Testimonial",
+                                    "name": "client_testimonial",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "The testimonial from the client.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Lorem ipsum dolor sit amet consectetur. Amet turpis lobortis odio sagittis ut habitasse ipsum id eget. Sit sit nisl in sed lectus sed aenean dui posuere. Habitant id id turpis ac integer. Auctor nunc mattis curabitur.",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_63ad5124fdf24",
+                                    "label": "Client Image",
+                                    "name": "client_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "The picture of the client, the image will not show if left empty.\r\nNOTE: Make sure the image is 1:1 aspect ratio (e.g. Same width and height)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_63ad5124fdf25",
+                                    "label": "Client Name",
+                                    "name": "client_name",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "The name of the Client",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Name Surname",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_63ad5124fdf26",
+                                    "label": "Client Description",
+                                    "name": "client_description",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "The description or job title of the Client.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Description",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
                         },
                         {
-                            "key": "field_63abe1f4a2e73",
-                            "label": "Client Name",
-                            "name": "client_name",
+                            "key": "field_63ad5126fdf27",
+                            "label": "Client Testimonial 3",
+                            "name": "client_testimonial_3",
                             "aria-label": "",
-                            "type": "text",
-                            "instructions": "The name of the Client",
+                            "type": "group",
+                            "instructions": "Testimonials from the Clients\r\nIf the fields were left empty, the testimonial will not show.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -472,237 +633,94 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Name Surname",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_63abe252a2e75",
-                            "label": "Client Description",
-                            "name": "client_description",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "The description or job title of the Client.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Description",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_63abfeb27aeb6",
-                    "label": "Client Testimonial 2",
-                    "name": "client_testimonial_2",
-                    "aria-label": "",
-                    "type": "group",
-                    "instructions": "Testimonials from the Clients\r\nIf the fields were left empty, the testimonial will not show.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_63abfeb27aeb7",
-                            "label": "Client Testimonial",
-                            "name": "client_testimonial",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "The testimonial from the client.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Lorem ipsum dolor sit amet consectetur. Amet turpis lobortis odio sagittis ut habitasse ipsum id eget. Sit sit nisl in sed lectus sed aenean dui posuere. Habitant id id turpis ac integer. Auctor nunc mattis curabitur.",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_63abfeb27aeb8",
-                            "label": "Client Image",
-                            "name": "client_image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "The picture of the client, the image will not show if left emtpy",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "",
-                            "library": "",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "preview_size": "medium"
-                        },
-                        {
-                            "key": "field_63abfeb27aeb9",
-                            "label": "Client Name",
-                            "name": "client_name",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "The name of the Client",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Name Surname",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_63abfeb27aeba",
-                            "label": "Client Description",
-                            "name": "client_description",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "The description or job title of the Client.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Description",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_63abfeb47aebb",
-                    "label": "Client Testimonial 3",
-                    "name": "client_testimonial_3",
-                    "aria-label": "",
-                    "type": "group",
-                    "instructions": "Testimonials from the Clients\r\nIf the fields were left empty, the testimonial will not show.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_63abfeb47aebc",
-                            "label": "Client Testimonial",
-                            "name": "client_testimonial",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "The testimonial from the client.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Lorem ipsum dolor sit amet consectetur. Amet turpis lobortis odio sagittis ut habitasse ipsum id eget. Sit sit nisl in sed lectus sed aenean dui posuere. Habitant id id turpis ac integer. Auctor nunc mattis curabitur.",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_63abfeb47aebd",
-                            "label": "Client Image",
-                            "name": "client_image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "The picture of the client, the image will not show if left emtpy",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "preview_size": "medium"
-                        },
-                        {
-                            "key": "field_63abfeb47aebe",
-                            "label": "Client Name",
-                            "name": "client_name",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "The name of the Client",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Name Surname",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_63abfeb47aebf",
-                            "label": "Client Description",
-                            "name": "client_description",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "The description or job title of the Client.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Description",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_63ad5126fdf28",
+                                    "label": "Client Testimonial",
+                                    "name": "client_testimonial",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "The testimonial from the client.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Lorem ipsum dolor sit amet consectetur. Amet turpis lobortis odio sagittis ut habitasse ipsum id eget. Sit sit nisl in sed lectus sed aenean dui posuere. Habitant id id turpis ac integer. Auctor nunc mattis curabitur.",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_63ad5126fdf29",
+                                    "label": "Client Image",
+                                    "name": "client_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "The picture of the client, the image will not show if left empty.\r\nNOTE: Make sure the image is 1:1 aspect ratio (e.g. Same width and height)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_63ad5126fdf2a",
+                                    "label": "Client Name",
+                                    "name": "client_name",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "The name of the Client",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Name Surname",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_63ad5126fdf2b",
+                                    "label": "Client Description",
+                                    "name": "client_description",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "The description or job title of the Client.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Description",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
                         }
                     ]
                 }
@@ -1412,5 +1430,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1672298551
+    "modified": 1672306812
 }
