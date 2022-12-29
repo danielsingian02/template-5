@@ -65,10 +65,9 @@ get_header();
 	            <?php
 	            get_template_part('template-parts/welcome', 'component', array(
 		            "title" => esc_attr($mainContent['title']),
-		            "content" => esc_attr($mainContent['content']),
+		            "content" => acf_esc_html($mainContent['content']),
 		            "left_image" => esc_url($mainContent['left_image']),
 		            "right_image" => esc_url($mainContent['right_image']),
-
 	            ));
 	            ?>
 

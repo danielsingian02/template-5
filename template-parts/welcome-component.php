@@ -9,9 +9,27 @@
             <?php echo $args['title']; ?>
         </h2>
 
-        <p class="welcome-component__content__content">
+        <div class="welcome-component__content__content">
 		    <?php echo $args['content']; ?>
-        </p>
+        </div>
+
+        <!-- List -->
+        <?php
+            if ($args['display_list']) {
+	            echo "<div class='welcome-component__content__lists' style='display: flex'>";
+
+                    foreach ( $args[ "lists" ] as $list ){
+                        if( $list = acf_esc_htmL( $list ) ) {
+	                        echo "<div class='welcome-component__content__lists__list'>";
+                                echo "<i class='bi bi-check-circle-fill'></i>";
+                                echo "<p>$list</p>";
+	                        echo "</div>";
+                        }
+                    }
+
+                echo "</div>";
+            }
+        ?>
 
     </div>
     <div class="welcome-component__content">
