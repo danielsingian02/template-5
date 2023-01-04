@@ -49,7 +49,7 @@ get_header();
 			        "template-parts/welcome",
 			        "component",
 			        array(
-				        "title" => esc_attr($welcomeLeftSection['title']),
+				        "title" => acf_esc_html($welcomeLeftSection['title']),
 				        "content" => acf_esc_html($welcomeLeftSection['content']),
 				        "display_list" => esc_attr($welcomeLeftSection['display_list']),
 				        // Note: Sanitize List in the template part itself
