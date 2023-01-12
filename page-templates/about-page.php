@@ -29,6 +29,13 @@ if ($showTestimonial = get_field( "testimonial_display_this_section" ) ?? false)
     $testimonial = get_field( "testimonial_section" ) ?? "";
 }
 
+/**
+ * Google Map Embed link, it must contain the url value of the src="" in the Google Maps embed iframe to work.
+ *
+ * @String $googleMapEmbed
+ */
+$googleMapEmbed = get_field( "google_map_embed" ) ?: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339717.318218167!2d-79.860994!3d35.1705173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0xad3f30f5e922ae19!2sNorth%20Carolina%2C%20USA!5e0!3m2!1sen!2sph!4v1670564659285!5m2!1sen!2sph";
+
 get_header();
 
 //echo "<pre>";
@@ -72,6 +79,19 @@ get_header();
                     )
                 );
             } ?>
+
+            <?php
+            if ( $googleMapEmbed ) {
+                get_template_part(
+                    "template-parts/google-map",
+                    "component",
+                    array(
+                         "link" => $googleMapEmbed,
+                    )
+                );
+            }
+            ?>
+
         </div>
     </div>
 
