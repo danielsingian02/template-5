@@ -1,0 +1,53 @@
+@use "../variables" as v;
+
+.about-us-call-to-action {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    width: 100%;
+    background-color: v.$primary-color;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    max-width: v.$page-content-width;
+    width: v.$page-content-width;
+
+    & .about-us-cta {
+      font-family: 'Montserrat';
+
+      &__title {
+        font-size: 40px;
+        line-height: 49px;
+      }
+
+      &__content {
+        margin: 32px auto;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.04em;
+      }
+
+      &__button {
+        padding: 16px;
+        color: v.$blue;
+        background-color: v.$dirty-white;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 15px;
+        border: 2px solid transparent;
+
+        &:hover {
+          background-color: v.$primary-color;
+          border-color: white;
+          color: white;
+        }
+      }
+    }
+  }
+}

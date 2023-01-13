@@ -282,6 +282,49 @@
   }
 }
 
+.about-us-call-to-action__container {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+  width: 100%;
+  background-color: #056E31;
+}
+.about-us-call-to-action__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  max-width: 90%;
+  width: 90%;
+}
+.about-us-call-to-action__wrapper .about-us-cta {
+  font-family: "Montserrat";
+}
+.about-us-call-to-action__wrapper .about-us-cta__title {
+  font-size: 40px;
+  line-height: 49px;
+}
+.about-us-call-to-action__wrapper .about-us-cta__content {
+  margin: 32px auto;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.about-us-call-to-action__wrapper .about-us-cta__button {
+  padding: 16px;
+  color: #094DA2;
+  background-color: #F6F6F7;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 15px;
+  border: 2px solid transparent;
+}
+.about-us-call-to-action__wrapper .about-us-cta__button:hover {
+  background-color: #056E31;
+  border-color: white;
+  color: white;
+}
+
 .home-page-container {
   width: 100%;
   margin: 0;

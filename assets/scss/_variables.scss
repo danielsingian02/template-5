@@ -3,6 +3,8 @@ $green: #056E31;
 $light-grey: #CDCDCD;
 $grey: #C7C7C7;
 $stone-grey : #525252;
+$blue : #094DA2;
+$dirty-white :  #F6F6F7;
 
 // Color Theme
 $primary-color: $green;
@@ -14,6 +16,9 @@ $media_tablet_xs    : "only screen and (max-width: 991px)";
 $media_mobile       : "only screen and (max-width: 767px)";
 $media_mobile_sm    : "only screen and (max-width: 425px)";
 $media_mobile_xs    : "only screen and (max-width: 375px)";
+
+// Widths
+$page-content-width : 90%;
 
 // Imports Air Factory Rounded Font
 @font-face {

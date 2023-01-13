@@ -30,6 +30,15 @@ if ($showTestimonial = get_field( "testimonial_display_this_section" ) ?? false)
 }
 
 /**
+ * Call to Action section
+ *
+ */
+$callToAction = get_field( "call_to_action" ) ?? "";
+
+//echo "<pre>";
+//var_dump($callToAction);
+
+/**
  * Google Map Embed link, it must contain the url value of the src="" in the Google Maps embed iframe to work.
  *
  * @String $googleMapEmbed
@@ -38,8 +47,8 @@ $googleMapEmbed = get_field( "google_map_embed" ) ?: "https://www.google.com/map
 
 get_header();
 
-//echo "<pre>";
-//echo var_dump(get_field_objects(get_the_ID()));
+echo "<pre>";
+echo var_dump(get_field_objects(get_the_ID()));
 ?>
 
     <div class="home-page-container">
@@ -79,6 +88,26 @@ get_header();
                     )
                 );
             } ?>
+
+        </div>
+
+        <?php
+        if (! get_field( "cta_visibility" ))
+        {
+	        get_template_part(
+		        "template-parts/about-us-cta",
+		        "component",
+		        array(
+			        "title" => $callToAction[ "title" ],
+			        "content" => $callToAction[ "content" ],
+			        "button_link" => $callToAction[ "button_linkurl" ],
+			        "button_text" => $callToAction[ "button_text" ],
+		        )
+	        );
+        }
+        ?>
+
+        <div class="home-page-content">
 
             <?php
             if ( $googleMapEmbed ) {
