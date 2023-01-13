@@ -47,8 +47,8 @@ $googleMapEmbed = get_field( "google_map_embed" ) ?: "https://www.google.com/map
 
 get_header();
 
-echo "<pre>";
-echo var_dump(get_field_objects(get_the_ID()));
+//echo "<pre>";
+//echo var_dump(get_field_objects(get_the_ID()));
 ?>
 
     <div class="home-page-container">
