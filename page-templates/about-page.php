@@ -92,14 +92,18 @@ get_header();
         </div>
 
         <?php
-        if (! get_field( "cta_visibility" ))
+        if ( get_field( "cta_visibility" ) )
         {
 	        get_template_part(
 		        "template-parts/about-us-cta",
 		        "component",
 		        array(
 			        "title" => $callToAction[ "title" ],
+                    "bg_color" => $callToAction[ "background_color" ],
+                    "text_color" => $callToAction[ "text_color" ],
 			        "content" => $callToAction[ "content" ],
+                    "button_background_color" => $callToAction[ "button_background_color" ],
+                    "button_text_color" => $callToAction[ "button_text_color" ],
 			        "button_link" => $callToAction[ "button_linkurl" ],
 			        "button_text" => $callToAction[ "button_text" ],
 		        )
