@@ -1,551 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
 @font-face {
   font-family: "AirFactoryRounded";
   src: url("./assets/fonts/AirFactoryRounded.ttf");
 }
+
 .welcome-component {
   display: flex;
   flex-direction: row;
   gap: 5rem;
 }
-.welcome-component__content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: black;
-}
-.welcome-component__content__title {
-  font-family: "AirFactoryRounded", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-}
-@media only screen and (max-width: 767px) {
-  .welcome-component__content__title {
-    margin-top: 2rem;
-    font-size: 30px;
-    line-height: 34px;
-    font-weight: 600;
-    color: #056E31;
-  }
-}
-.welcome-component__content__content {
-  font-size: 25px;
-  margin-top: 58px;
-}
-@media only screen and (max-width: 767px) {
-  .welcome-component__content__content {
-    margin-top: 0;
-    font-size: 18px;
-  }
-}
-.welcome-component__content__lists {
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  display: none;
-  margin-top: 24px;
-}
-.welcome-component__content__lists__list {
-  display: flex;
-  flex-direction: row;
-}
-.welcome-component__content__lists__list > i {
-  color: #056E31;
-  margin-right: 28px;
-  font-size: 30px;
-}
-.welcome-component__content__lists__list > p {
-  margin: auto 0;
-  font-size: 20px;
-  font-family: "Montserrat";
-  font-weight: 500;
-}
-.welcome-component__content .welcome-component__grid-image {
-  display: grid;
-  grid-template-columns: repeat(8fr, 8fr);
-  position: relative;
-  margin: 0 auto;
-}
-.welcome-component__content .welcome-component__grid-image > div > img {
-  width: 350px;
-  height: auto;
-}
-.welcome-component__content .welcome-component__grid-image .grid-image__left {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row: 1;
-  z-index: -1;
-}
-.welcome-component__content .welcome-component__grid-image .grid-image__right {
-  grid-column-start: 3;
-  grid-column-end: 8;
-  grid-row: 1;
-  z-index: 1;
-  padding-top: 20%;
-}
-@media only screen and (max-width: 767px) {
-  .welcome-component__content .welcome-component__grid-image .grid-image__right {
-    padding-top: 1rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .welcome-component__content .welcome-component__grid-image {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .welcome-component {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .welcome-component {
-    flex-direction: column-reverse;
-    gap: 1rem;
-  }
-}
 
-.recent-pages {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 21px;
-  margin: 76px 0;
-}
-.recent-pages__page {
-  display: flex;
-  flex-basis: 32%;
-  border: 3px solid transparent;
-  background-color: #056E31;
-}
-.recent-pages__page > a {
-  width: 100%;
-  text-decoration: none;
-  padding: 18px 0 18px 15px;
-  text-align: left;
-  color: white;
-  font-family: "AirFactoryRounded";
-  font-size: 23px;
-  line-height: 157.7%;
-}
-.recent-pages__page > a:hover {
-  color: #056E31;
-}
-.recent-pages__page:hover {
-  background-color: white;
-  border-color: #056E31;
-}
-@media only screen and (max-width: 767px) {
-  .recent-pages {
-    flex-direction: column;
-  }
-}
-
-.we-are-one {
-  width: 100%;
-  display: flex;
-  padding: 114px 0;
-  gap: 1rem;
-  flex-direction: column;
-  font-family: "AirFactoryRounded";
-}
-.we-are-one__title {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 63px;
-  text-align: center;
-}
-@media only screen and (max-width: 767px) {
-  .we-are-one__title {
-    font-size: 30px;
-  }
-}
-.we-are-one__description {
-  font-weight: 400;
-  font-size: 25px;
-  text-justify: auto;
-}
-@media only screen and (max-width: 767px) {
-  .we-are-one__description {
-    font-size: 20px;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .we-are-one {
-    padding: 57px 0;
-  }
-}
-
-.testimonial-content {
-  display: flex;
-  flex-direction: column;
-  padding: 74.5px 0;
-  row-gap: 83px;
-  width: 100%;
-}
-.testimonial-content__text-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.testimonial-content__text-content > .testimonial-title {
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 59px;
-  color: #056E31;
-}
-.testimonial-content__text-content > .testimonial-description {
-  width: 45%;
-  margin: auto;
-  font-family: "AirFactoryRounded";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 180%;
-}
-@media only screen and (max-width: 767px) {
-  .testimonial-content__text-content > .testimonial-description {
-    width: 95%;
-  }
-}
-.testimonial-content__testimonials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 33px;
-}
-.testimonial-content__testimonials > * {
-  display: flex;
-  flex-direction: column;
-  padding: 29px;
-  text-align: center;
-  border-radius: 12.6979px;
-  box-shadow: 11.7909px 5.44197px 50.7917px rgba(87, 87, 87, 0.1);
-  font-family: "DM Sans";
-}
-.testimonial-content__testimonials > * .client-testimonial {
-  font-weight: 400;
-  font-size: 16.3259px;
-  line-height: 29px;
-  color: #525252;
-}
-.testimonial-content__testimonials > * .client-container {
-  display: flex;
-  flex-direction: row;
-  column-gap: 2rem;
-  margin-top: 44px;
-  justify-content: center;
-  text-align: left;
-}
-.testimonial-content__testimonials > * .client-container > .client-picture {
-  flex-basis: 40%;
-}
-.testimonial-content__testimonials > * .client-container > .client-picture > img {
-  margin-left: auto;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  border-radius: 7766279631452241919px;
-}
-.testimonial-content__testimonials > * .client-container > .client-info {
-  flex-basis: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.testimonial-content__testimonials > * .client-container > .client-info > .client-name {
-  font-weight: 500;
-  font-size: 16.3259px;
-  line-height: 21px;
-  color: #056E31;
-}
-.testimonial-content__testimonials > * .client-container > .client-info > .client-description {
-  font-weight: 400;
-  font-size: 12.2475px;
-  line-height: 22px;
-  color: #525252;
-}
-.testimonial-content__testimonials > * .client-container > .client-info > p {
-  margin: 0;
-  padding: 0;
-}
-@media only screen and (max-width: 767px) {
-  .testimonial-content__testimonials {
-    flex-direction: column;
-  }
-}
-
-.about-us-call-to-action__container {
-  display: flex;
-  justify-content: center;
-  padding: 64px 0;
-  width: 100%;
-  background-color: #056E31;
-}
-.about-us-call-to-action__wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  max-width: 90%;
-  width: 90%;
-}
-.about-us-call-to-action__wrapper .about-us-cta {
-  font-family: "Montserrat";
-}
-.about-us-call-to-action__wrapper .about-us-cta__title {
-  font-size: 40px;
-  line-height: 49px;
-}
-.about-us-call-to-action__wrapper .about-us-cta__content {
-  margin: 32px auto;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.04em;
-}
-.about-us-call-to-action__wrapper .about-us-cta__button {
-  padding: 16px;
-  color: #094DA2;
-  background-color: #F6F6F7;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 15px;
-  border: 2px solid transparent;
-}
-.about-us-call-to-action__wrapper .about-us-cta__button:hover {
-  background-color: #056E31;
-  border-color: white;
-  color: white;
-}
-
-.home-page-container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.home-page-container .banner-image {
-  display: flex;
-  width: 100%;
-  height: 700px;
-  background-position: center;
-  background-size: cover;
-}
-.home-page-container .home-page-content {
-  max-width: 90%;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding-top: 4rem;
-}
-.home-page-container .home-page-content .welcome-container {
-  display: flex;
-  gap: 5rem;
-}
-
-header {
-  width: 100%;
-  font-family: "AirFactoryRounded", Serif;
-  margin-bottom: 10px;
-}
-@media only screen and (max-width: 767px) {
-  header .site-branding {
-    display: none !important;
-  }
-}
-header .site-icon {
-  height: auto;
-  max-width: 200px;
-}
-header .site-title {
-  margin: 0;
-  padding: 0;
-}
-header .site-branding {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.5rem 0;
-}
-header nav {
-  border-top: 1px solid #CDCDCD;
-  border-bottom: 1px solid #CDCDCD;
-  width: 100%;
-}
-header nav ul, header nav li {
-  margin: 0;
-}
-header nav ul {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 57px;
-  justify-content: center;
-}
-@media only screen and (max-width: 767px) {
-  header nav ul {
-    flex-direction: column;
-    column-gap: 0px;
-    row-gap: 10px;
-    padding-left: 0;
-  }
-}
-header nav li {
-  display: flex;
-  list-style-type: none;
-  border-color: transparent;
-}
-header nav li.current_page_item > a {
-  border-bottom: 2px solid #056E31;
-}
-header nav li > a {
-  text-decoration: none;
-  padding: 1rem 0;
-  color: black;
-}
-@media only screen and (max-width: 767px) {
-  header .menu {
-    display: none;
-  }
-}
-header .mobile-header {
-  display: none;
-  margin-left: auto;
-  flex-direction: row;
-}
-header .mobile-header .mobile-site-branding {
-  display: flex;
-  width: fit-content;
-  padding-left: 0.5rem;
-}
-header .mobile-header .mobile-site-branding > * {
-  width: 50%;
-  height: auto;
-}
-header .mobile-header .hamburger-btn {
-  padding: 0.8rem 1rem;
-  justify-content: center;
-  border: 2px solid transparent;
-  border-radius: 0.5rem;
-  color: #056E31;
-  font-size: 2rem;
-  display: flex;
-}
-header .mobile-header .hamburger-btn > * {
-  color: currentColor;
-}
-header .mobile-header .hamburger-btn:hover {
-  background-color: white;
-  border-color: #056E31;
-  color: #056E31;
-}
-header .mobile-header .menu-canvas {
-  width: 80%;
-}
-header .mobile-header .menu-canvas .menu {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-header .mobile-header .menu-canvas .menu a {
-  padding: 0.5rem 0;
-}
-@media only screen and (max-width: 767px) {
-  header .mobile-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-footer p {
-  margin: 0;
-  padding: 0;
-}
-footer .footer-content {
-  border-top: 1px solid #CDCDCD;
-  border-bottom: 1px solid #CDCDCD;
-  display: flex;
-  flex-direction: row;
-  padding: 43px 0;
-}
-footer .footer-content p {
-  font-family: "AirFactoryRounded";
-  font-weight: 400;
-  font-size: 25px;
-}
-footer .footer-content > .site-icon {
-  flex-basis: 40%;
-}
-footer .footer-content > .site-icon > img {
-  display: flex;
-  margin: auto;
-  width: 181px;
-  height: 102px;
-}
-footer .footer-content > .footer-text-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  flex-basis: 60%;
-}
-footer .footer-content > .footer-text-content > p {
-  width: 90%;
-}
-@media only screen and (max-width: 767px) {
-  footer .footer-content > .footer-text-content > p {
-    margin: 1rem auto;
-  }
-}
-@media only screen and (max-width: 767px) {
-  footer .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  footer .footer-content > * {
-    flex-basis: auto;
-  }
-}
 footer .copyright {
   padding: 26px 0;
   text-align: center;
 }
-footer .copyright > p {
+
+footer .copyright>p {
   font-family: "AirFactoryRounded";
   font-weight: 400;
   font-size: 25px;
 }
-@media only screen and (max-width: 767px) {
-  footer .copyright > p {
-    width: 90%;
-    margin: auto;
-  }
-}
 
-/*
-  Theme Name: Template 5 Testing
-  Text Domain: Template 5
-  Version: 1.5
-  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, accessibility-ready
-  Author: iPhiTech IT Digital Solutions Corporation
-  Author URI: iPhiTech IT Digital Solutions Corporation
-*/
 body {
   font-family: "AirFactoryRounded", sans-serif;
   margin: 0;
@@ -559,5 +36,579 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.welcome-component__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+}
+
+.welcome-component__content__title {
+  font-family: "AirFactoryRounded", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.welcome-component__content__content {
+  font-size: 25px;
+  margin-top: 58px;
+}
+
+.welcome-component__content__lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  display: none;
+  margin-top: 24px;
+}
+
+.welcome-component__content__lists__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome-component__content__lists__list>i {
+  color: #056E31;
+  margin-right: 28px;
+  font-size: 30px;
+}
+
+.welcome-component__content__lists__list>p {
+  margin: auto 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.welcome-component__content .welcome-component__grid-image {
+  display: grid;
+  grid-template-columns: repeat(8fr, 8fr);
+  position: relative;
+  margin: 0 auto;
+}
+
+.welcome-component__content .welcome-component__grid-image>div>img {
+  width: 350px;
+  height: auto;
+}
+
+.welcome-component__content .welcome-component__grid-image .grid-image__left {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row: 1;
+  z-index: -1;
+}
+
+.welcome-component__content .welcome-component__grid-image .grid-image__right {
+  grid-column-start: 3;
+  grid-column-end: 8;
+  grid-row: 1;
+  z-index: 1;
+  padding-top: 20%;
+}
+
+.recent-pages {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin: 76px 0;
+}
+
+.recent-pages__page {
+  display: flex;
+  flex-basis: 32%;
+  border: 3px solid transparent;
+  background-color: #056E31;
+}
+
+.recent-pages__page>a {
+  width: 100%;
+  text-decoration: none;
+  padding: 18px 0 18px 15px;
+  text-align: left;
+  color: white;
+  font-family: "AirFactoryRounded";
+  font-size: 23px;
+  line-height: 157.7%;
+}
+
+.recent-pages__page>a:hover {
+  color: #056E31;
+}
+
+.recent-pages__page:hover {
+  background-color: white;
+  border-color: #056E31;
+}
+
+
+.we-are-one {
+  width: 100%;
+  display: flex;
+  padding: 114px 0;
+  gap: 1rem;
+  flex-direction: column;
+  font-family: "AirFactoryRounded";
+}
+
+.we-are-one__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 63px;
+  text-align: center;
+}
+
+.we-are-one__description {
+  font-weight: 400;
+  font-size: 25px;
+  text-justify: auto;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  padding: 74.5px 0;
+  row-gap: 83px;
+  width: 100%;
+}
+
+.testimonial-content__text-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonial-content__text-content>.testimonial-title {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 59px;
+  color: #056E31;
+}
+
+.testimonial-content__text-content>.testimonial-description {
+  width: 45%;
+  margin: auto;
+  font-family: "AirFactoryRounded";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.testimonial-content__testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 33px;
+}
+
+.testimonial-content__testimonials>* {
+  display: flex;
+  flex-direction: column;
+  padding: 29px;
+  text-align: center;
+  border-radius: 12.6979px;
+  box-shadow: 11.7909px 5.44197px 50.7917px rgba(87, 87, 87, 0.1);
+  font-family: "DM Sans";
+}
+
+.testimonial-content__testimonials>* .client-testimonial {
+  font-weight: 400;
+  font-size: 16.3259px;
+  line-height: 29px;
+  color: #525252;
+}
+
+.testimonial-content__testimonials>* .client-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  margin-top: 44px;
+  justify-content: center;
+  text-align: left;
+}
+
+.testimonial-content__testimonials>* .client-container>.client-picture {
+  flex-basis: 40%;
+}
+
+.testimonial-content__testimonials>* .client-container>.client-picture>img {
+  margin-left: auto;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 7766279631452241919px;
+}
+
+.testimonial-content__testimonials>* .client-container>.client-info {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-content__testimonials>* .client-container>.client-info>.client-name {
+  font-weight: 500;
+  font-size: 16.3259px;
+  line-height: 21px;
+  color: #056E31;
+}
+
+.testimonial-content__testimonials>* .client-container>.client-info>.client-description {
+  font-weight: 400;
+  font-size: 12.2475px;
+  line-height: 22px;
+  color: #525252;
+}
+
+.testimonial-content__testimonials>* .client-container>.client-info>p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.about-us-call-to-action__container {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+  width: 100%;
+  background-color: #056E31;
+}
+
+.about-us-call-to-action__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  max-width: 90%;
+  width: 90%;
+}
+
+.about-us-call-to-action__wrapper .about-us-cta {
+  font-family: "Montserrat";
+}
+
+.about-us-call-to-action__wrapper .about-us-cta__title {
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.about-us-call-to-action__wrapper .about-us-cta__content {
+  margin: 32px auto;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.about-us-call-to-action__wrapper .about-us-cta__button {
+  padding: 16px;
+  color: #094DA2;
+  background-color: #F6F6F7;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 15px;
+  border: 2px solid transparent;
+}
+
+.about-us-call-to-action__wrapper .about-us-cta__button:hover {
+  background-color: #056E31;
+  border-color: white;
+  color: white;
+}
+
+.home-page-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page-container .banner-image {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-page-container .home-page-content {
+  max-width: 90%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+
+.home-page-container .home-page-content .welcome-container {
+  display: flex;
+  gap: 5rem;
+}
+
+header {
+  width: 100%;
+  font-family: "AirFactoryRounded", Serif;
+  margin-bottom: 10px;
+}
+
+header .site-icon {
+  height: auto;
+  max-width: 200px;
+}
+
+header .site-title {
+  margin: 0;
+  padding: 0;
+}
+
+header .site-branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+header nav {
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+  width: 100%;
+}
+
+header nav ul,
+header nav li {
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 57px;
+  justify-content: center;
+}
+
+
+header nav li {
+  display: flex;
+  list-style-type: none;
+  border-color: transparent;
+}
+
+header nav li.current_page_item>a {
+  border-bottom: 2px solid #056E31;
+}
+
+header nav li>a {
+  text-decoration: none;
+  padding: 1rem 0;
+  color: black;
+}
+
+header .mobile-header {
+  display: none;
+  margin-left: auto;
+  flex-direction: row;
+}
+
+header .mobile-header .mobile-site-branding {
+  display: flex;
+  width: fit-content;
+  padding-left: 0.5rem;
+}
+
+header .mobile-header .mobile-site-branding>* {
+  width: 50%;
+  height: auto;
+}
+
+header .mobile-header .hamburger-btn {
+  padding: 0.8rem 1rem;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  color: #056E31;
+  font-size: 2rem;
+  display: flex;
+}
+
+header .mobile-header .hamburger-btn>* {
+  color: currentColor;
+}
+
+header .mobile-header .hamburger-btn:hover {
+  background-color: white;
+  border-color: #056E31;
+  color: #056E31;
+}
+
+header .mobile-header .menu-canvas {
+  width: 80%;
+}
+
+header .mobile-header .menu-canvas .menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+header .mobile-header .menu-canvas .menu a {
+  padding: 0.5rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-content {
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+  display: flex;
+  flex-direction: row;
+  padding: 43px 0;
+}
+
+footer .footer-content p {
+  font-family: "AirFactoryRounded";
+  font-weight: 400;
+  font-size: 25px;
+}
+
+footer .footer-content>.site-icon {
+  flex-basis: 40%;
+}
+
+footer .footer-content>.site-icon>img {
+  display: flex;
+  margin: auto;
+  width: 181px;
+  height: 102px;
+}
+
+footer .footer-content>.footer-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  flex-basis: 60%;
+}
+
+footer .footer-content>.footer-text-content>p {
+  width: 90%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .welcome-component {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome-component__content__title {
+    margin-top: 2rem;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #056E31;
+  }
+
+  .welcome-component__content__content {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .recent-pages {
+    flex-direction: column;
+  }
+
+  .we-are-one__description {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .we-are-one {
+    padding: 57px 0;
+  }
+
+  .we-are-one__title {
+    font-size: 30px;
+  }
+
+  .testimonial-content__text-content>.testimonial-description {
+    width: 95%;
+  }
+
+  .testimonial-content__testimonials {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 10px;
+    padding-left: 0;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header .site-branding {
+    display: none !important;
+  }
+
+  footer .copyright>p {
+    width: 90%;
+    margin: auto;
+  }
+
+  footer .footer-content>.footer-text-content>p {
+    margin: 1rem auto;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-content>* {
+    flex-basis: auto;
+  }
+
+  header .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .welcome-component__content .welcome-component__grid-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-component {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .welcome-component__content .welcome-component__grid-image .grid-image__right {
+    padding-top: 1rem;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */
